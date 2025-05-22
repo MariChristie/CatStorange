@@ -10,6 +10,8 @@ menu_bar_colour = '#264653'
 toggle_icon = tk.PhotoImage(file='images/toggle_btn_icon.png')
 home_icon = tk.PhotoImage(file='images/home_icon.png')
 service_icon = tk.PhotoImage(file='images/services_icon.png')
+update_icon = tk.PhotoImage(file='images/updates_icon.png')
+
 
 menu_bar_frame = tk.Frame(root, bg=menu_bar_colour)
 
@@ -24,6 +26,10 @@ home_btn.place(x=9, y=130, width=30, height=40)
 service_btn = tk.Button(menu_bar_frame, image=service_icon, bg=menu_bar_colour,
                             bd=0, activebackground=menu_bar_colour)
 service_btn.place(x=9, y=190, width=30, height=40)
+
+update_btn = tk.Button(menu_bar_frame, image=update_icon, bg=menu_bar_colour,
+                            bd=0, activebackground=menu_bar_colour)
+update_btn.place(x=9, y=250, width=30, height=40)
 
 menu_bar_frame.pack(side=tk.LEFT, fill=tk.Y, pady=4, padx=3)
 menu_bar_frame.pack_propagate(flag=False)
